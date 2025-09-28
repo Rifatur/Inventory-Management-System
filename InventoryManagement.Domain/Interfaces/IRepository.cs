@@ -14,7 +14,6 @@ namespace InventoryManagement.Domain.Interfaces
     public interface IRepository<T> where T : class
     {
         // Read operations
-        Task<T> GetByIdAsync(int id);
         Task<T> GetByIdAsync(long id);
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate);
