@@ -1,0 +1,13 @@
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.AssemblyInfo.cs
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.csproj.CoreCompileInputs.cache
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.sourcelink.json
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\bin\Debug\net8.0\InventoryManagement.Domain.deps.json
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\bin\Debug\net8.0\InventoryManagement.Domain.dll
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\bin\Debug\net8.0\InventoryManagement.Domain.pdb
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.dll
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\refint\InventoryManagement.Domain.dll
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.pdb
+D:\Practice Project\InventoryManagement\InventoryManagement.Domain\obj\Debug\net8.0\ref\InventoryManagement.Domain.dll

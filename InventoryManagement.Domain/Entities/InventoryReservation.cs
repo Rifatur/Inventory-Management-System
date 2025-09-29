@@ -17,25 +17,9 @@ namespace InventoryManagement.Domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long ReservationId { get; set; }
-
-        /// <summary>
-        /// Foreign key to InventoryItem
-        /// </summary>
         public long InventoryId { get; set; }
-
-        /// <summary>
-        /// Foreign key to Order
-        /// </summary>
         public long OrderId { get; set; }
-
-        /// <summary>
-        /// Quantity reserved
-        /// </summary>
         public int QuantityReserved { get; set; }
-
-        /// <summary>
-        /// Reservation status (Active, Released, Expired)
-        /// </summary>
         [Required]
         [StringLength(50)]
         public string Status { get; set; }

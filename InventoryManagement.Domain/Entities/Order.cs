@@ -68,6 +68,9 @@ namespace InventoryManagement.Domain.Entities
 
         [StringLength(50)]
         public string OrderSource { get; set; }
+        public string OrderRemark { get; set; }
+        public string OrderFlag { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public int? AssignedWarehouseId { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedAt { get; set; }

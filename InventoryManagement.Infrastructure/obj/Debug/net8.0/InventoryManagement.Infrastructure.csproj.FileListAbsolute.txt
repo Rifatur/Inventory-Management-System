@@ -1,0 +1,15 @@
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\bin\Debug\net8.0\InventoryManagement.Infrastructure.deps.json
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\bin\Debug\net8.0\InventoryManagement.Infrastructure.runtimeconfig.json
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\bin\Debug\net8.0\InventoryManagement.Infrastructure.dll
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\bin\Debug\net8.0\InventoryManagement.Infrastructure.pdb
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.csproj.AssemblyReference.cache
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.AssemblyInfoInputs.cache
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.AssemblyInfo.cs
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.sourcelink.json
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.dll
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\refint\InventoryManagement.Infrastructure.dll
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.pdb
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\InventoryManagement.Infrastructure.genruntimeconfig.cache
+D:\Practice Project\InventoryManagement\InventoryManagement.Infrastructure\obj\Debug\net8.0\ref\InventoryManagement.Infrastructure.dll
