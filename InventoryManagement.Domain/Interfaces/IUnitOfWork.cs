@@ -1,4 +1,6 @@
 ﻿using InventoryManagement.Domain.Interfaces.Repositories;
+using InventoryManagement.Domain.longerfaces.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,5 +34,22 @@ namespace InventoryManagement.Domain.Interfaces
         // Database operations
         Task<int> ExecuteSqlRawAsync(string sql, params object[] parameters);
         Task<int> ExecuteSqlInterpolatedAsync(FormattableString sql);
+
+        // Stored procedure execution
+        Task<List<T>> ExecuteStoredProcedureAsync<T>(string storedProcedureName, params object[] parameters) where T : class;
+
+        //public async Task<List<T>> ExecuteStoredProcedureAsync<T>(string storedProcedureName, params object[] parameters) where T : class
+        //{
+        //    // Build SQL command
+        //    var sql = $"EXEC {storedProcedureName} {string.Join(", ", parameters.Select((_, i) => $"@p{i}"))}";
+
+        //    // Execute and return results
+        //    return await _context.Set<T>().FromSqlRaw(sql, parameters).ToListAsync();
+        //}
+        //var topProducts = await unitOfWork.ExecuteStoredProcedureAsync<Product>("GetTopSellingProducts");
+        //var topProducts = await unitOfWork.ExecuteStoredProcedureAsync<Product>(
+        //    "GetTopSellingProductsByDate",
+        //    new SqlParameter("@StartDate", startDate),
+        //    new SqlParameter("@EndDate", endDate));
     }
 }

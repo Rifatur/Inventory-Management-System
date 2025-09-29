@@ -1736,6 +1736,19 @@
             "rid": "win"
           }
         }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.20"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        }
       }
     }
   },
@@ -4544,11 +4557,17 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
+      "msbuildProject": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Azure.Messaging.ServiceBus >= 7.20.1",
+      "InventoryManagement.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.20",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.20",
@@ -4592,7 +4611,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+              "projectPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
