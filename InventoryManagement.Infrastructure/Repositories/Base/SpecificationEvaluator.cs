@@ -11,31 +11,17 @@ namespace InventoryManagement.Infrastructure.Repositories.Base
     /// <summary>
     /// Evaluates specifications and builds queries with all the specified criteria
     /// </summary>
-    public static class SpecificationEvaluator<TEntity> where TEntity : class
+    public class SpecificationEvaluator<T> where T : class
     {
-        /// <summary>
-        /// Applies the specification to the query
-        /// </summary>
-        /// <param name="inputQuery">The base query</param>
-        /// <param name="specification">The specification to apply</param>
-        /// <returns>Query with specification applied</returns>
-        public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity> specification)
+        public static IQueryable<T> GetQuery(IQueryable<T> inputQuery, ISpecification<T> specification)
         {
             var query = inputQuery;
 
-            // Apply criteria (WHERE clause)
+            // Apply filtering
             if (specification.Criteria != null)
             {
                 query = query.Where(specification.Criteria);
             }
-
-            // Apply includes
-            query = specification.Includes
-                .Aggregate(query, (current, include) => current.Include(include));
-
-            // Apply string-based includes (for nested includes)
-            query = specification.IncludeStrings
-                .Aggregate(query, (current, include) => current.Include(include));
 
             // Apply ordering
             if (specification.OrderBy != null)
@@ -47,13 +33,25 @@ namespace InventoryManagement.Infrastructure.Repositories.Base
                 query = query.OrderByDescending(specification.OrderByDescending);
             }
 
-            // Apply secondary ordering if exists
-
-
             // Apply grouping
             if (specification.GroupBy != null)
             {
                 query = query.GroupBy(specification.GroupBy).SelectMany(x => x);
+            }
+
+            // Apply includes
+            query = specification.Includes
+                .Aggregate(query, (current, include) => current.Include(include));
+
+            // Apply string-based includes
+            query = specification.IncludeStrings
+                .Aggregate(query, (current, include) => current.Include(include));
+
+            // Apply paging
+            if (specification.IsPagingEnabled)
+            {
+                query = query.Skip(specification.Skip)
+                             .Take(specification.Take);
             }
 
             // Apply distinct
@@ -62,15 +60,7 @@ namespace InventoryManagement.Infrastructure.Repositories.Base
                 query = query.Distinct();
             }
 
-            // Apply paging (should be last)
-            if (specification.IsPagingEnabled)
-            {
-                query = query.Skip(specification.Skip)
-                             .Take(specification.Take);
-            }
-
             return query;
         }
-
     }
 }
