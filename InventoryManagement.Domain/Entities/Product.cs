@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace InventoryManagement.Domain.Entities
@@ -87,8 +82,8 @@ namespace InventoryManagement.Domain.Entities
         public string UpdatedBy { get; set; }
 
         // Navigation properties
-        //public virtual ICollection<InventoryItem> InventoryItems { get; set; }
-        //public virtual ICollection<OrderItem> OrderItems { get; set; }
-        //public virtual ICollection<StockMovement> StockMovements { get; set; }
+        public virtual ICollection<InventoryItem> InventoryItems { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
+        public virtual ICollection<StockMovement> StockMovements { get; set; }
     }
 }

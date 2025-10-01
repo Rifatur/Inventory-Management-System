@@ -1,10 +1,5 @@
 ﻿using InventoryManagement.Domain.Entities;
 using InventoryManagement.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InventoryManagement.Domain.longerfaces.Repositories
 {
@@ -19,8 +14,8 @@ namespace InventoryManagement.Domain.longerfaces.Repositories
         Task<IReadOnlyList<InventoryItem>> GetLowStockItemsAsync(long? warehouseId = null);
         Task<long> GetTotalQuantityAsync(long productId);
         Task<bool> CheckAvailabilityAsync(long productId, long quantity);
-        Task<bool> ReserveStockAsync(long productId, long warehouseId, long quantity, long orderId);
+        Task<bool> ReserveStockAsync(long productId, long warehouseId, int quantity, long orderId);
         Task<bool> ReleaseStockAsync(long orderId);
-        Task<Dictionary<long, long>> GetStockLevelsAsync(List<long> productIds);
+        Task<Dictionary<long, int>> GetStockLevelsAsync(List<long> productIds);
     }
 }
