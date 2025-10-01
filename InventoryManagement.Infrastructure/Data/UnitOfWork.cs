@@ -1,16 +1,10 @@
 ﻿using InventoryManagement.Domain.Interfaces;
 using InventoryManagement.Domain.Interfaces.Repositories;
 using InventoryManagement.Domain.longerfaces.Repositories;
-using InventoryManagement.Infrastructure.Repositories;
 using InventoryManagement.Infrastructure.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InventoryManagement.Infrastructure.Data
 {
@@ -154,9 +148,11 @@ namespace InventoryManagement.Infrastructure.Data
             _currentTransaction?.Dispose();
         }
 
-        public Task<List<T>> ExecuteStoredProcedureAsync<T>(string storedProcedureName, params object[] parameters) where T : class
+        public async Task<List<T>> ExecuteStoredProcedureAsync<T>(string storedProcedureName, params object[] parameters) where T : class
         {
-            throw new NotImplementedException();
+            var sql = $"EXEC {storedProcedureName} {string.Join(", ", parameters.Select((_, i) => $"@p{i}"))}";
+            // Execute and return results
+            return await _context.Set<T>().FromSqlRaw(sql, parameters).ToListAsync();
         }
     }
 }

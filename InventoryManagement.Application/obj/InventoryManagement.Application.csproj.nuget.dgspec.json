@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {}
+    "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {}
   },
   "projects": {
-    "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+    "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "projectUniqueName": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
         "projectName": "InventoryManagement.Application",
-        "projectPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Dulon\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\obj\\",
+        "projectPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\rifat\\.nuget\\packages\\",
+        "outputPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dulon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rifat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,7 +32,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -106,6 +110,78 @@
             "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[8.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectName": "InventoryManagement.Domain",
+        "projectPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\rifat\\.nuget\\packages\\",
+        "outputPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rifat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.20, )"
             }
           },
           "imports": [
