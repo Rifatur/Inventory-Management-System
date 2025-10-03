@@ -56,7 +56,7 @@ namespace InventoryManagement.Infrastructure.Repositories
             return await query.ToListAsync();
         }
 
-        public async Task<long> GetTotalQuantityAsync(long productId)
+        public async Task<int> GetTotalQuantityAsync(long productId)
         {
             return await _context.InventoryItems
                 .Where(i => i.ProductId == productId)

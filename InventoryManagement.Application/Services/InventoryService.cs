@@ -7,6 +7,7 @@ using InventoryManagement.Application.DTOs.Stock;
 using InventoryManagement.Application.Interfaces;
 using InventoryManagement.Domain.Entities;
 using InventoryManagement.Domain.Interfaces;
+using InventoryManagement.Infrastructure.Specifications;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
 
