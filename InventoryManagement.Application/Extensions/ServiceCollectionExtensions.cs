@@ -9,7 +9,7 @@ using InventoryManagement.Infrastructure.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace InventoryManagement.Infrastructure.Extensions
+namespace InventoryManagement.Application.Extensions
 {
     public static class ServiceCollectionExtensions
     {

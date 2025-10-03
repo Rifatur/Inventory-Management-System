@@ -12,7 +12,7 @@ namespace InventoryManagement.Domain.longerfaces.Repositories
         Task<IReadOnlyList<InventoryItem>> GetInventoryByProductAsync(long productId);
         Task<IReadOnlyList<InventoryItem>> GetInventoryByWarehouseAsync(long warehouseId);
         Task<IReadOnlyList<InventoryItem>> GetLowStockItemsAsync(long? warehouseId = null);
-        Task<long> GetTotalQuantityAsync(long productId);
+        Task<int> GetTotalQuantityAsync(long productId);
         Task<bool> CheckAvailabilityAsync(long productId, long quantity);
         Task<bool> ReserveStockAsync(long productId, long warehouseId, int quantity, long orderId);
         Task<bool> ReleaseStockAsync(long orderId);

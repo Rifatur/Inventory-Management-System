@@ -1,11 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InventoryManagement.Domain.Entities
 {
@@ -45,7 +39,7 @@ namespace InventoryManagement.Domain.Entities
         [StringLength(500)]
         public string ShippingAddress { get; set; } = string.Empty;
         [StringLength(500)]
-        public string BillingAddress { get; set; }= string.Empty;
+        public string BillingAddress { get; set; } = string.Empty;
         [Column(TypeName = "decimal(10,2)")]
         public decimal SubTotal { get; set; }
 
@@ -71,7 +65,7 @@ namespace InventoryManagement.Domain.Entities
         public string OrderRemark { get; set; }
         public string OrderFlag { get; set; }
         public bool IsDeleted { get; set; } = false;
-        public int? AssignedWarehouseId { get; set; }
+        public long? AssignedWarehouseId { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedAt { get; set; }
 
