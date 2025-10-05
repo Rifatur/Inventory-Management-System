@@ -5591,23 +5591,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rifat\\.nuget\\packages\\": {},
+    "C:\\Users\\Dulon\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+      "projectUniqueName": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
       "projectName": "InventoryManagement.Application",
-      "projectPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
-      "packagesPath": "C:\\Users\\rifat\\.nuget\\packages\\",
-      "outputPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Application\\obj\\",
+      "projectPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+      "packagesPath": "C:\\Users\\Dulon\\.nuget\\packages\\",
+      "outputPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rifat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dulon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5623,11 +5623,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-              "projectPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+            "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+              "projectPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
             },
-            "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj": {
-              "projectPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj"
+            "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj": {
+              "projectPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj"
             }
           }
         }
