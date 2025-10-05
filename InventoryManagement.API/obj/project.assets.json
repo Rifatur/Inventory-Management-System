@@ -447,23 +447,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rifat\\.nuget\\packages\\": {},
+    "C:\\Users\\Dulon\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.API\\InventoryManagement.API.csproj",
+      "projectUniqueName": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.API\\InventoryManagement.API.csproj",
       "projectName": "InventoryManagement.API",
-      "projectPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.API\\InventoryManagement.API.csproj",
-      "packagesPath": "C:\\Users\\rifat\\.nuget\\packages\\",
-      "outputPath": "X:\\DevZone\\Inventory-Management-System\\InventoryManagement.API\\obj\\",
+      "projectPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.API\\InventoryManagement.API.csproj",
+      "packagesPath": "C:\\Users\\Dulon\\.nuget\\packages\\",
+      "outputPath": "D:\\Practice Project\\InventoryManagement\\InventoryManagement.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rifat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dulon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
