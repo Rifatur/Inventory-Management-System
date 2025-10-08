@@ -1,5 +1,6 @@
 ﻿using InventoryManagement.Application.DTOs.Common;
 using InventoryManagement.Application.DTOs.Inventory;
+using InventoryManagement.Application.DTOs.Stock;
 using InventoryManagement.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -192,5 +193,67 @@ namespace InventoryManagement.API.Controllers
                 });
             }
         }
+
+        [HttpPost("adjust")]
+        [Authorize(Roles = "Admin,WarehouseManager")]
+        [ProducesResponseType(typeof(ApiResponse<bool>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> AdjustInventory([FromBody] InventoryAdjustmentDto adjustmentDto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "System";
+                var result = await _inventoryService.AdjustInventoryAsync(
+                    adjustmentDto.ProductId,
+                    adjustmentDto.WarehouseId,
+                    adjustmentDto.AdjustmentQuantity,
+                    adjustmentDto.Reason,
+                    userId);
+
+                if (!result.Success)
+                {
+                    return BadRequest(result);
+                }
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error adjusting inventory");
+                return StatusCode(500, new ApiResponse<object>
+                {
+                    Success = false,
+                    Message = "An error occurred while adjusting inventory",
+                    Errors = new List<string> { "Internal server error" }
+                });
+            }
+        }
+        [HttpGet("low-stock")]
+        [ProducesResponseType(typeof(ApiResponse<List<LowStockAlertDto>>), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetLowStockItems([FromQuery] long? warehouseId = null)
+        {
+            try
+            {
+                var result = await _inventoryService.GetLowStockItemsAsync(warehouseId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving low stock items");
+                return StatusCode(500, new ApiResponse<object>
+                {
+                    Success = false,
+                    Message = "An error occurred while retrieving low stock items",
+                    Errors = new List<string> { "Internal server error" }
+                });
+            }
+        }
+
+
     }
 }
